@@ -1,11 +1,11 @@
 package hackerrank;
 
-import java.util.HashMap;
+import java.util.Map;
 
 public interface FurnitureOrderInterface {
 
     /**
-     * @param type The type of Furniture being added to the order.
+     * @param type  The type of Furniture being added to the order.
      * @param count The number of units of Furniture type 'type' to add to the order.
      */
     public void addToOrder(final Furniture type, final int count);
@@ -13,7 +13,7 @@ public interface FurnitureOrderInterface {
     /**
      * @return All the ordered furniture as a mapping of Furniture types to Integer quantities.
      */
-    public HashMap<Furniture, Integer> getOrderedFurniture();
+    public Map<Furniture, Integer> getOrderedFurniture();
 
     /**
      * @param type The type of Furniture
@@ -22,7 +22,6 @@ public interface FurnitureOrderInterface {
     public int getTypeCount(Furniture type);
 
     /**
-     *
      * @param type The type of Furniture being ordered
      * @return The total cost of just the Furniture units of 'type' in the order.
      */
@@ -33,8 +32,8 @@ public interface FurnitureOrderInterface {
      */
     public float getTotalOrderCost();
 
-	/**
-	 * @return The total number of all types of Furniture units in the order.
-	 */
+    /**
+     * @return The total number of all types of Furniture units in the order.
+     */
     public int getTotalOrderQuantity();
 }
